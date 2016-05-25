@@ -7,5 +7,7 @@ d = download()
 scroll = scroll(brightness)
 shop = "pimoroni"
 val = d.get_total_stock(shop)
-print(str(val)+ " in stock, at: " + shop)
-scroll.show(val)
+while (val!=0 or val==0):
+  print(str(val)+ " in stock, at: " + shop)
+  scroll.show(val)
+  time.sleep(60.0)
